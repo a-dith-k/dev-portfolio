@@ -39,7 +39,6 @@ export class WorkComponent {
   }
 
   get selectedWorks() {
-
   return this.works[this.selectedCategory as keyof typeof this.works];
 
   }
