@@ -1,0 +1,52 @@
+<!-- <div class="max-w-md mx-auto bg-gray-900/70 backdrop-blur-md shadow-lg rounded-full px-2 py-1 flex gap-2 items-center border border-gray-700 transition-all duration-300">
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+    [ngClass]="{
+      'bg-gradient-to-br from-gray-800 to-gray-900 text-white font-semibold shadow-md scale-[1.02]':
+        selectedCategory === category,
+      'text-gray-300 hover:bg-gray-800 hover:text-white':
+        selectedCategory !== category
+    }"
+    class="flex-1 py-1.5 px-3 rounded-full transition-all duration-300 text-sm text-center flex items-center justify-center gap-2 whitespace-nowrap"
+  >
+    <i [ngClass]="categoryIcons[category]"></i>
+    {{ category }}
+  </button>
+</div> -->
+<!-- <div class="max-w-md mx-auto bg-gray-900/70 backdrop-blur-md shadow-lg rounded-full px-2 py-1 flex gap-2 items-center border border-gray-700 transition-all duration-300 overflow-x-auto">
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+    [ngClass]="{
+      'bg-gradient-to-br from-gray-800 to-gray-900 text-white font-semibold shadow-md scale-[1.02]':
+        selectedCategory === category,
+      'text-gray-300 hover:bg-gray-800 hover:text-white':
+        selectedCategory !== category
+    }"
+    class="flex-shrink-0 py-1.5 px-3 rounded-full transition-all duration-300 text-sm text-center flex items-center justify-center gap-2 whitespace-nowrap"
+  >
+    <i [ngClass]="categoryIcons[category]"></i>
+    {{ category }}
+  </button>
+</div> -->
+
+<div
+  class="max-w-md mx-auto bg-gray-900/70 backdrop-blur-md shadow-lg rounded-full px-2 py-1 flex gap-2 items-center border border-gray-700 transition-all duration-300 overflow-x-auto scrollbar-hide scroll-snap-x scroll-snap-mandatory"
+>
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+    [ngClass]="{
+      'bg-gradient-to-br from-gray-800 to-gray-900 text-white font-semibold shadow-md scale-[1.02]':
+        selectedCategory === category,
+      'text-gray-300 hover:bg-gray-800 hover:text-white':
+        selectedCategory !== category
+    }"
+    class="flex-shrink-0 py-1.5 px-3 rounded-full transition-all duration-300 text-sm text-center flex items-center justify-center gap-2 whitespace-nowrap scroll-snap-start"
+  >
+    <i [ngClass]="categoryIcons[category]"></i>
+    {{ category }}
+  </button>
+</div>
+

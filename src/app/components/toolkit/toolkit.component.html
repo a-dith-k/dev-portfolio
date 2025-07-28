@@ -1,1 +1,37 @@
-<p>toolkit works!</p>
+<section class="px-6 py-10 bg-gradient-to-b from-gray-950 to-gray-900 text-gray-100">
+  <!-- Section Heading -->
+  <div class="text-center mb-8">
+    <h2 class="text-4xl font-bold text-white">Toolkit & Skills</h2>
+    <p class="text-gray-400">Explore technologies and libraries I've worked with</p>
+  </div>
+
+  <!-- Segmented Menu -->
+  <app-category-menu
+    [categories]="categories"
+    [selectedCategory]="selectedCategory"
+    [categoryIcons]="categoryIcons"
+    (categorySelected)="selectCategory($event)"
+  ></app-category-menu>
+
+  <!-- Selected Category Heading -->
+  <div class="max-w-6xl mx-auto mt-10">
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <!-- <div
+        *ngFor="let skill of selectedSkills"
+        class="bg-gray-800/70 backdrop-blur-md rounded-xl shadow-md p-4 flex flex-col items-center justify-center transition-all duration-300 hover:scale-[1.03]"
+      >
+        <i [ngClass]="skill.icon" class="text-2xl text-blue-400 mb-2"></i>
+        <span class="text-sm text-white font-medium text-center whitespace-nowrap">{{ skill.name }}</span>
+      </div> -->
+      <div
+  *ngFor="let skill of selectedSkills"
+  class="bg-gray-800/70 backdrop-blur-md rounded-xl shadow-md p-4 flex flex-col items-center justify-center transition-all duration-300 hover:scale-[1.03]"
+>
+  <i [ngClass]="skill.icon" class="text-2xl text-blue-400 mb-2"></i>
+  <span class="text-sm text-white font-medium text-center whitespace-nowrap">{{ skill.name }}</span>
+</div>
+    </div>
+  </div>
+</section>
