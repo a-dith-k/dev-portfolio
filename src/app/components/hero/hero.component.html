@@ -13,30 +13,36 @@
   <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent z-10"></div>
 
   <!-- Hero content -->
-<div class="absolute inset-0 flex items-center justify-start pl-10 z-20">
-  <div class="flex items-center">
-    <h1
-      class="text-4xl font-bold text-white overflow-hidden whitespace-nowrap animate-typewriter"
-      style="width: 20ch;"
-    >
-      Welcome to Adith.dev
-    </h1>
-    <span
-      class="border-r-2 border-white h-8 animate-hideCursor"
-      style="animation-delay: 2.5s;"
-    ></span>
+  <div class="absolute inset-0 flex items-center justify-start pl-10 z-20">
+    <div class="flex items-center">
+      <h1
+        class="text-4xl font-bold text-white overflow-hidden whitespace-nowrap animate-typewriter"
+        style="width: 20ch;"
+      >
+        Welcome to Adith.dev
+      </h1>
+      <span
+        class="border-r-2 border-white h-8 animate-hideCursor"
+        style="animation-delay: 2.5s;"
+      ></span>
+    </div>
   </div>
-</div>
 
-
-<!-- Add this to your global styles or component CSS -->
-<style>
-  .hide-cursor {
-    animation: hideCursor 0.5s ease forwards;
-    animation-delay: 2.5s;
-  }
-</style>
-
-
-
+  <!-- Social Media Vertical Bar -->
+  <div class="absolute top-1/2 right-6 transform -translate-y-1/2 z-30">
+    <div class="flex flex-col space-y-4 items-center">
+      <a href="https://github.com/yourusername" target="_blank" class="text-white hover:text-blue-400 transition">
+        <i class="fab fa-github text-2xl"></i>
+      </a>
+      <a href="https://leetcode.com/yourusername" target="_blank" class="text-white hover:text-yellow-400 transition">
+        <i class="fas fa-code text-2xl"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-white hover:text-blue-500 transition">
+        <i class="fab fa-linkedin text-2xl"></i>
+      </a>
+      <a href="mailto:you@example.com" class="text-white hover:text-green-400 transition">
+        <i class="fas fa-envelope text-2xl"></i>
+      </a>
+    </div>
+  </div>
 </section>
